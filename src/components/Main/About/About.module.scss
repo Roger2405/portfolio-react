@@ -1,0 +1,31 @@
+.About {
+    grid-area: about;
+    height: fit-content;
+    
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    
+    &__content{
+        display: flex;
+        min-height: 200px;
+
+        &--text {
+            font-size: 1.5rem;
+            width: 75%;
+            margin: auto 0;
+        }
+        &--photo {
+            //background-image: url('../../../assets/img/foto_perfil.jpeg');
+            background-color: aliceblue;
+            background-size: contain;
+            background-position:center;
+            width: 25%;
+            float:inline-end;
+            clip-path: circle();
+
+        }
+    }
+    
+}

@@ -1,0 +1,18 @@
+.LevelBar {
+    display: flex;
+    height: 2rem;
+
+    &__active {
+        background-color: whitesmoke;
+        border: 1px solid rgb(255, 255, 255);
+        height: 100%;
+        width: 10%;
+    }
+    &__inactive {
+        border: 1px solid rgb(255, 255, 255);
+        height: 100%;
+        width: 10%;
+    }
+
+    
+}

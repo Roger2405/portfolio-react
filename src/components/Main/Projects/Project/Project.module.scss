@@ -1,0 +1,43 @@
+.Project {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: min-content auto;
+    box-sizing:border-box;
+
+    &__icon {
+        float: left;
+        border-radius: 1rem;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        margin-left: 0;
+        margin-right: auto;
+        height: 100%;
+        padding: auto 0;
+    }
+    &__screenshots {
+        grid-column: span 2;
+        height: fit-content;
+        margin: 0 auto;
+        position: relative;
+        
+        img {
+            max-height: 200px;
+            max-width: 400px;
+            padding: 0 2.5rem;
+        }
+        button {
+            background-color: unset;
+            border: none;
+            color: white;
+            font-size: 5rem;
+            position:absolute;
+            top: calc(50% - 2.5rem);
+            width: 5rem;
+        }
+        &--buttonRight {
+            right: 0;
+        }
+    }
+}

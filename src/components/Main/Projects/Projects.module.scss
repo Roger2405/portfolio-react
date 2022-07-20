@@ -1,0 +1,15 @@
+
+.Projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    &__title {
+        grid-column: span 2;
+        font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+    }
+
+}

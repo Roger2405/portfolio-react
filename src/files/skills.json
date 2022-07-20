@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nome": "Unity 3D",
+        "tempo": 12,
+        "nivel": 3
+    },
+    {
+        "id": 2,
+        "nome": "C#",
+        "tempo": 12,
+        "nivel": 3
+    },
+    {
+        "id": 3,
+        "nome": "JavaScript",
+        "tempo": 3,
+        "nivel": 1
+    },
+    {
+        "id": 4,
+        "nome": "HTML",
+        "tempo": 4,
+        "nivel": 2
+    },
+    {
+        "id": 5,
+        "nome": "CSS",
+        "tempo": 4,
+        "nivel": 3
+    },
+    {
+        "id": 6,
+        "nome": "ReactJS",
+        "tempo": 1,
+        "nivel": 1
+    }
+]
