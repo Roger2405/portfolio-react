@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    width: 100%;
 
     &__title {
         grid-column: span 2;
