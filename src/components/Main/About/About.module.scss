@@ -4,26 +4,43 @@
     &__title {
         font-size: 3rem;
         text-transform: uppercase;
+        margin-bottom: 1rem;
+
     }
     
     &__content{
         display: flex;
         min-height: 200px;
-
+        
+        
         &--text {
             font-size: 1.5rem;
+            font-weight: 100;
             width: 75%;
             margin: auto 0;
         }
         &--photo {
-            //background-image: url('../../../assets/img/foto_perfil.jpeg');
+            background-image: url('../../../assets/img/foto_perfil.jpeg');
             background-color: aliceblue;
+            
             background-size: contain;
             background-position:center;
             width: 25%;
             float:inline-end;
             clip-path: circle();
 
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            &--photo {
+                display: none;
+                height: 150px;
+                margin: 0 auto;
+
+            }
+            &--text {
+                width: 100%;
+            }
         }
     }
     

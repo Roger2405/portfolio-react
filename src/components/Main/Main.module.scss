@@ -1,14 +1,28 @@
-
+@import "styles/variaveis";
 
 main {
+    background-color: $background-main; 
     display: grid;
-    margin: 0 10rem;
+    padding: 10rem;
+    padding-top: 1rem;
     height: auto;
 
+
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 7fr 3fr;
     grid-template-areas: 
     "about skills"
     "projects skills";
     gap: 2rem;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 5rem;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 2rem;
+    }
 }

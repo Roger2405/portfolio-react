@@ -11,7 +11,13 @@ export default function Projects() {
     return (
         <div className={styles.Projects}>
             <h2 className={styles.Projects__title}>Projetos</h2>
-            {projectsList}
+            <div className={styles.Projects__content}>
+                {projectsJson.map((project => {
+                    return (<Project key={project.id} {...project} />);
+                }))
+                }
+
+            </div>
 
         </div>
     )

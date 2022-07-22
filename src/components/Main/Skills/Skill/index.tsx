@@ -19,11 +19,11 @@ export default function Skill({skill}: SkillProps) {
             break;
     }
     return (
-        <div className={styles.skill}>
-            <h3 className={styles.skill__name}>{skill.nome}</h3>
-            <p className={styles.skill__expTime}>Tempo de experiência: {timeFormat(skill.tempo)}</p>
+        <div className={styles.Skill}>
+            <h3 className={styles.Skill__name}>{skill.nome}</h3>
+            <p className={styles.Skill__expTime}>Tempo de experiência: {timeFormat(skill.tempo)}</p>
             <LevelBar level={skill.nivel}/>
-            <p className={styles.skill__level}>{levelText}</p>
+            <p className={styles.Skill__level}>{levelText}</p>
         </div>
     )
 }

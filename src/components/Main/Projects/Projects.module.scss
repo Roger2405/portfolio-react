@@ -1,16 +1,25 @@
 
 .Projects {
     grid-area: projects;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    //gap: 1rem;
     width: 100%;
 
     &__title {
-        grid-column: span 2;
         font-size: 3rem;
-        color: white;
         text-transform: uppercase;
+        //grid-column: span 2;
+        margin-bottom: 1rem;
     }
-
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    @media screen and (max-width: 1440px) {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
