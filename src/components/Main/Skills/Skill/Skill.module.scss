@@ -11,10 +11,11 @@
 
     &__name {
         font-size: 2rem;
+        text-shadow: $shadow;
     }
 
     &__expTime {
-        color: lightblue;
+        color: $background-main;
         font-size: 1rem;
         margin-bottom: .25rem;
     }
