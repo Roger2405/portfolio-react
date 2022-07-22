@@ -1,11 +1,11 @@
 import styles from './Header.module.scss';
-import Logo from 'assets/img/logo_r.png';
+import { ReactComponent as Logo } from 'assets/img/logo.svg';
 
 
 export default function Cabecalho() {
     return (
         <header className={styles.Cabecalho}>
-            <img className={styles.Cabecalho__logo} src={Logo} />
+            <Logo className={styles.Cabecalho__logo} />
             <nav className='Cabecalho__nav'>
             </nav>
 
