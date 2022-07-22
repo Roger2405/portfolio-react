@@ -18,7 +18,7 @@
             font-weight: 100;
             width: 75%;
             margin: auto 0;
-        }/*
+        }
         &--photo {
             background-image: url('../../../assets/img/foto_perfil.jpeg');
             background-color: aliceblue;
@@ -29,7 +29,7 @@
             float:inline-end;
             clip-path: circle();
 
-        }*/
+        }
         @media screen and (max-width: 768px) {
             flex-direction: column-reverse;
             &--photo {
