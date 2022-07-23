@@ -12,11 +12,7 @@
         height: 50px;
         width: 100%;
         
-        &--icon {
-            width: 50px;
-            border-radius: .5rem;
-            box-shadow: $shadow;
-        }
+        
         &--name {
             color: aliceblue;
             font-size: 1.5rem;
@@ -27,7 +23,7 @@
             margin: auto;
             margin-right: 1rem;
             color: white;
-            filter: invert(100%);
+            
         }
         
     }
@@ -47,7 +43,7 @@
         padding: 0 5rem;
         width: fit-content;
         margin: 0 auto;
-        
+        position: relative;
         
         &--img {
             max-height: 150px;
@@ -63,7 +59,7 @@
             position:absolute;
             text-shadow: $shadow;
             bottom: 1rem;
-            height: 5rem;
+            line-height: 5rem;
         }
         &--buttonLeft {
             left: 0;
@@ -73,10 +69,14 @@
             right: 0;
         }
     }
+    &__screenshots--hide {
+        display: none;
+    }
 }
+/*
 .Project__screenshots--imgFullscreen {
     position: absolute;
     z-index: 10;
 
     transition: 1s;
-}
+}*/

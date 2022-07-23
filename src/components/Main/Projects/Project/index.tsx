@@ -1,4 +1,5 @@
-import IconNewPage from 'assets/img/new_page.png';
+
+import IconLink from 'components/common/IconLink';
 import { IProject } from 'interfaces/projects';
 import { useState } from 'react';
 import styles from './Project.module.scss';
@@ -50,13 +51,11 @@ export default function Project({
             <div className={styles.Project__header} onClick={viewImages}>
                 <img className={styles['Project__header--icon']} src={iconSrc} alt="ícone do projeto" />
                 <h3 className={styles['Project__header--name']} >{name}</h3>
-                <a className={styles['Project__header--link']} target="_blank" href={url}><img src={IconNewPage} /></a>
+                <IconLink url={url} />
             </div>
-            <div className={`${styles.Project__screenshots} ${!showImages && styles['Project__screenshots--hideInMobile']}`} >
-                {/*screenshots.map(image => <img src={image} />)*/}
+            <div className={`${styles.Project__screenshots} ${!showImages && styles['Project__screenshots--hideInMobile']} ${screenshots.length === 0 && styles['Project__screenshots--hide']}`} >
                 <button onClick={previousImage} className={styles['Project__screenshots--buttonLeft']}>{'<'}</button>
                 
-                {/* <img className={`${idImgFull === id ? styles['Project__screenshots--imgFullscreen'] : styles['Project__screenshots--img']}`} src={screenshots[imageIndex]} onClick={imageFullscreen} alt="Captura de tela do projeto em execução" /> */}
                 <img className={styles['Project__screenshots--img']} src={screenshots[imageIndex]} onClick={() => setImageFullscreen(id)} alt="Captura de tela do projeto em execução" />
                 <button onClick={nextImage} className={styles['Project__screenshots--buttonRight']}>{'>'}</button>
             </div>

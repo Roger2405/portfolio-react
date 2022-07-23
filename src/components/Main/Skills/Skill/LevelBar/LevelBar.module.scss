@@ -1,11 +1,12 @@
 @import "styles/variaveis";
 
 .LevelBar {
+    box-shadow: $shadow;
     display: flex;
     height: 2rem;
 
     &__active {
-        background-color: aliceblue;
+        background-color: lightblue;
     }
     &__inactive {
         background-color: $background-main;

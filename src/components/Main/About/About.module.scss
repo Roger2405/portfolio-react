@@ -1,24 +1,46 @@
 .About {
     grid-area: about;
-    
+
     &__title {
         font-size: 3rem;
         text-transform: uppercase;
         margin-bottom: 1rem;
 
     }
-    
-    &__content{
+
+    &__content {
         display: flex;
         min-height: 200px;
-        
-        
+
+
         &--text {
             font-size: 1.5rem;
             font-weight: 100;
             width: 75%;
             margin: auto 0;
         }
+
+        &--links {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+
+        &--link {
+            background-color: skyblue;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem .5rem;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            margin-right: 0;
+
+            border-radius: 1.5rem 0 0 1.5rem;
+
+
+        }
+
+        /*
         &--photo {
             background-image: url('../../../assets/img/foto_perfil.jpeg');
             background-color: aliceblue;
@@ -29,19 +51,21 @@
             float:inline-end;
             clip-path: circle();
 
-        }
+        }*/
         @media screen and (max-width: 768px) {
             flex-direction: column-reverse;
+
             &--photo {
                 display: none;
                 height: 150px;
                 margin: 0 auto;
 
             }
+
             &--text {
                 width: 100%;
             }
         }
     }
-    
+
 }
