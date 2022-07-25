@@ -1,6 +1,12 @@
-
-.IconNewPage {
-    width: 50px;
+.IconLink {
     border-radius: .5rem;
     //box-shadow: $shadow;
+
+    margin: auto .5rem;
+    color: white;
+
+
+    &__icon {
+        -webkit-filter: invert(100%);
+    }
 }

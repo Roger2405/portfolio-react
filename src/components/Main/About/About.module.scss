@@ -1,3 +1,5 @@
+@import "styles/variaveis";
+
 .About {
     grid-area: about;
 
@@ -16,28 +18,22 @@
         &--text {
             font-size: 1.5rem;
             font-weight: 100;
-            width: 75%;
+            width: 85%;
             margin: auto 0;
         }
 
         &--links {
-            display: flex;
-            flex-direction: column;
-            width: 25%;
+            width: fit-content;
+            
         }
 
         &--link {
-            background-color: skyblue;
+            background-image: linear-gradient(-90deg, $background-main, gray 40%, #FFFFFF 40%);
             display: flex;
-            justify-content: space-between;
-            padding: 1rem .5rem;
-            margin-bottom: 1rem;
-            margin-left: 1rem;
-            margin-right: 0;
-
             border-radius: 1.5rem 0 0 1.5rem;
-
-
+            width: 100%;
+            margin-top: 1rem;
+            height: 50px;
         }
 
         /*
@@ -52,8 +48,9 @@
             clip-path: circle();
 
         }*/
+        /*
         @media screen and (max-width: 768px) {
-            flex-direction: column-reverse;
+            flex-direction: column;
 
             &--photo {
                 display: none;
@@ -65,7 +62,7 @@
             &--text {
                 width: 100%;
             }
-        }
+        }*/
     }
 
 }

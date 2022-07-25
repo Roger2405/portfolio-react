@@ -1,14 +1,14 @@
 import Icon from 'assets/img/new_page.png';
-import { LinkHTMLAttributes } from 'react';
+import style from './IconLink.module.scss';
 
-interface IUrl {
+interface IProps {
     url: string
 }
 
-export default function IconLink({url}: IUrl) {
+export default function IconLink({url}: IProps) {
     return (
-        <a href={url} >
-            <img className='IconNewPage' src={Icon} />
+        <a className={style.IconLink} target="_blank" href={url} >
+            <img className={style.IconLink__icon} src={Icon} />
         </a>
     )
 }

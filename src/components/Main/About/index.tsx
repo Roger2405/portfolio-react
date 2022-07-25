@@ -1,5 +1,7 @@
 
 import IconLink from 'components/common/IconLink';
+import {ReactComponent as LogoLinkedin} from 'assets/img/linkedin-logo.svg';
+import {ReactComponent as LogoGithub} from 'assets/img/github-logo.svg';
 import styles from './About.module.scss';
 
 
@@ -12,12 +14,13 @@ export default function About() {
                 {/*<div className={styles['About__content--photo']} ></div>*/}
                 <div className={styles['About__content--links']}>
                     <div className={styles['About__content--link']}>
+                        <LogoLinkedin />
                         <IconLink url={"https://www.linkedin.com/in/roger-romaniczen-90a1a014b/"} />
                     </div>
-                    {/*
-                        <a href="https://github.com/Roger2405" target="_blank">GitHub</a>
-
-    */}
+                    <div className={styles['About__content--link']}>
+                        <LogoGithub />
+                        <IconLink url={"https://github.com/Roger2405"} />
+                    </div>
                 </div>
             </div>
         </section>
