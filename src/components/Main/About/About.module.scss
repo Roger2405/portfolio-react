@@ -18,8 +18,7 @@
         &--text {
             font-size: 1.5rem;
             font-weight: 100;
-            width: 85%;
-            margin: auto 0;
+            margin: 0;
         }
 
         &--links {
@@ -36,33 +35,6 @@
             height: 50px;
         }
 
-        /*
-        &--photo {
-            background-image: url('../../../assets/img/foto_perfil.jpeg');
-            background-color: aliceblue;
-            
-            background-size: contain;
-            background-position:center;
-            width: 25%;
-            float:inline-end;
-            clip-path: circle();
-
-        }*/
-        /*
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-
-            &--photo {
-                display: none;
-                height: 150px;
-                margin: 0 auto;
-
-            }
-
-            &--text {
-                width: 100%;
-            }
-        }*/
     }
 
 }

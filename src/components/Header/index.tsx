@@ -1,5 +1,6 @@
 import styles from './Header.module.scss';
-import Logo from 'assets/img/logo_r.png';
+import Logo from 'assets/img/logo.svg';
+//import Logo from 'assets/img/logo_r.png';
 
 
 export default function Cabecalho() {
