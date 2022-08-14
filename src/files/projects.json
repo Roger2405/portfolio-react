@@ -47,8 +47,9 @@
         "id": 5,
         "name": "Calculadora de Despesas",
         "url": "https://calcula-despesas.vercel.app/",
-        "iconSrc": "",
+        "iconSrc": "assets/img/logo-cd.svg",
         "screenshots": [
+            
         ]
     }
 ]
