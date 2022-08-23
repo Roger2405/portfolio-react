@@ -5,23 +5,12 @@ import { useState } from 'react';
 
 
 export default function Projects() {
-    const [idImgFull, setIdImgFull] = useState(Number);
-
     /*
     let projectsList: JSX.Element[];
     projectsList = projectsJson.map((project) => {
         return (<Project {...project}  />);
     });
 */
-    function setImageFullscreen(id: number) {
-        if(idImgFull !== 0) {
-            setIdImgFull(0);
-        }
-        else {
-            setIdImgFull(id);
-
-        }
-    }
 
     return (
         <div className={styles.Projects}>
@@ -31,7 +20,6 @@ export default function Projects() {
                     return (<Project 
                         key={project.id}
                         {...project} 
-                        setImageFullscreen={setImageFullscreen} 
                         />);
                 }))
                 }

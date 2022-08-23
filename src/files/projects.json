@@ -51,5 +51,31 @@
         "screenshots": [
             
         ]
+    },
+    {
+        "id": 6,
+        "name": "Portifólio | Trabalho ADS",
+        "url": "https://portifolio-roger-dr.vercel.app/",
+        "iconSrc": "",
+        "screenshots": []
+    },
+    {
+        "id": 7,
+        "name": "E-commerce Page | Challenge",
+        "url": "https://ecommerce-product-roger2405.vercel.app/",
+        "iconSrc": "https://ecommerce-product-roger2405.vercel.app/images/favicon-32x32.png",
+        "screenshots": [
+            "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/uehz7kwoo7gesfebbqi8.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Advice Generator | Challenge",
+        "url": "https://advice-generator-roger2405.vercel.app/",
+        "iconSrc": "https://advice-generator-roger2405.vercel.app/images/favicon-32x32.png",
+        "screenshots": [
+            "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/l0nkljeqewyxuw0vedhd.jpg"
+        ]
     }
+
 ]

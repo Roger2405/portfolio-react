@@ -2,7 +2,7 @@
 
 .Project {
     //background-color: rgba(255, 255, 255, 0.75);
-    background-image: linear-gradient(120deg, #303030 30%, #202020 50%, $light-blue 50%, $dark-blue 100%);
+    background-image: linear-gradient(120deg,#505050 30%, #202020 50%, $light-blue 50%, $dark-blue 100%);
     box-sizing:border-box;
     border-radius: .5rem;
     //noborder: .25rem solid white;
@@ -68,9 +68,10 @@
             right: 0;
         }
     }
-    &__screenshots--hide {
+    .hide {
         display: none;
     }
+    
 }
 /*
 .Project__screenshots--imgFullscreen {

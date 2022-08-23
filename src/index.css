@@ -47,6 +47,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  color: black;
 }
 
 main, header {
